@@ -1,0 +1,22 @@
+{
+  "name": "Vanlife",
+  "description": "https://scrimba.com/frontend-path-c0j/~014f",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "firebase": "^12.2.1",
+    "miragejs": "0.1.46",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "4.7.1",
+    "react-router-dom": "6.4.3",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "*"
+  }
+}
