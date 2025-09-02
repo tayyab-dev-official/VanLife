@@ -1,19 +1,82 @@
-# Getting Started
-Install the dependencies and run the project
+# VanLife
+
+VanLife is a React-based web application for van rentals, allowing users to browse, view details, and manage van listings. The project uses Firebase for authentication and data storage, and Vite as the build tool.
+
+## Features
+
+- Browse available vans with detailed information
+- User authentication system
+- Host dashboard for van management
+- Detailed van listings with pricing, photos, and descriptions
+- Responsive design for mobile and desktop viewing
+
+## Tech Stack
+
+- React
+- Firebase (Authentication & Firestore)
+- Vite
+- React Router
+- CSS for styling
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+- Firebase account
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/tayyab-dev-official/VanLifeWithFirebaseConfig.git
+cd VanLifeWithFirebaseConfig
 ```
+
+2. Install dependencies
+```bash
 npm install
-npm start
 ```
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+3. Set up environment variables
+   - Copy `.env.example` to `.env`
+   - Fill in your Firebase configuration details
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+4. Start the development server
+```bash
+npm run dev
+```
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+The application will be available at `http://localhost:5173`
+
+## Project Structure
+
+```
+VanLife/
+├── components/     # Reusable React components
+├── pages/         # Page components and routes
+├── contexts/      # React context providers
+├── assets/        # Static assets like images
+└── api.js         # Firebase configuration and API functions
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Contact
+
+- GitHub: [@tayyab-dev-official](https://github.com/tayyab-dev-official)
+- LinkedIn: [Mohammad Tayyab](https://www.linkedin.com/in/mohammad-tayyab-91ba5236b/)
+- Email: tayyab.professional.official@gmail.com
 
 Happy Coding!
