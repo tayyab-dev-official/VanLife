@@ -1,5 +1,5 @@
 import React from "react"
-import { useParams, Link, NavLink, Outlet } from "react-router-dom"
+import { useParams, Link, NavLink, Outlet, Navigate } from "react-router-dom"
 import { getVan } from "../../api"
 
 export default function HostVanDetail() {
@@ -29,7 +29,14 @@ export default function HostVanDetail() {
     }
 
     if (error) {
-        return <h1>There was an error: {error.message}</h1>
+        return <Navigate 
+            to="/404" 
+            replace 
+            state={{ 
+                message: "Sorry, we couldn't find the van you're looking for.",
+                error: error.message
+            }} 
+        />
     }
 
     const activeStyles = {

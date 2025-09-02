@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { Link, Navigate } from "react-router-dom"
 import { getHostVans } from "../../api"
 
 export default function HostVans() {
@@ -43,7 +43,9 @@ export default function HostVans() {
     }
 
     if (error) {
-        return <h1>There was an error: {error.message}</h1>
+        if (error) {
+                return <Navigate to="/404" replace state={{ message: "Vans not found!" }} />
+            }
     }
 
     return (

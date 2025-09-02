@@ -15,8 +15,9 @@ export default function AuthRequired() {
       <Navigate
         to="/login"
         state={{
-          message: "You must log in first",
+          message: "Please log in to access this page.",
           from: location.pathname,
+          isAuthError: true
         }}
         replace
       />

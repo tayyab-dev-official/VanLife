@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider } from "./contexts/AuthContext";
 
 import Home from "./pages/Home";
@@ -42,9 +42,13 @@ function App() {
                   <Route index element={<HostVanInfo />} />
                   <Route path="pricing" element={<HostVanPricing />} />
                   <Route path="photos" element={<HostVanPhotos />} />
+                  <Route path="*" element={<Navigate to="/404" replace />} />
                 </Route>
+                <Route path="*" element={<Navigate to="/404" replace />} />
               </Route>
             </Route>
+
+            <Route path="vans/:id/*" element={<Navigate to="/404" replace />} />
 
             <Route path="*" element={<NotFound />} />
           </Route>

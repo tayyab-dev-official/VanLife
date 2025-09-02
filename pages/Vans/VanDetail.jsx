@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, useParams, useLocation } from "react-router-dom"
+import { Link, useParams, useLocation, Navigate } from "react-router-dom"
 import { getVan } from "../../api"
 
 export default function VanDetail() {
@@ -29,7 +29,14 @@ export default function VanDetail() {
     }
     
     if (error) {
-        return <h1>There was an error: {error.message}</h1>
+        return <Navigate 
+            to="/404" 
+            replace 
+            state={{ 
+                message: "Sorry, we couldn't find the van you're looking for.",
+                error: error.message
+            }} 
+        />
     }
 
     const search = location.state?.search || "";

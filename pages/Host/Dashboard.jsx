@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { Link, Navigate } from "react-router-dom"
 import { BsStarFill } from "react-icons/bs"
 import { getHostVans } from "../../api"
 
@@ -35,7 +35,9 @@ export default function Dashboard() {
     }
 
     if (error) {
-        return <h1>Error: {error.message}</h1>
+        if (error) {
+                return <Navigate to="/404" replace state={{ message: "Not found!" }} />
+            }
     }
 
     return (
