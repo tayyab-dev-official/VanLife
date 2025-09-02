@@ -20,10 +20,6 @@ import Layout from "./components/Layout";
 import HostLayout from "./components/HostLayout";
 import AuthRequired from "./components/AuthRequired";
 
-// import seedData from './seedData'
-// seedData()
-
-
 function App() {
   return (
     <AuthProvider>
