@@ -42,9 +42,7 @@ function App() {
                   <Route index element={<HostVanInfo />} />
                   <Route path="pricing" element={<HostVanPricing />} />
                   <Route path="photos" element={<HostVanPhotos />} />
-                  <Route path="*" element={<NotFound />} />
                 </Route>
-                <Route path="*" element={<NotFound />} />
               </Route>
             </Route>
 
