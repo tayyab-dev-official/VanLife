@@ -31,21 +31,25 @@ VanLife is a React-based web application for van rentals, allowing users to brow
 ### Installation
 
 1. Clone the repository
+
 ```bash
 git clone https://github.com/tayyab-dev-official/VanLifeWithFirebaseConfig.git
 cd VanLifeWithFirebaseConfig
 ```
 
 2. Install dependencies
+
 ```bash
 npm install
 ```
 
 3. Set up environment variables
+
    - Copy `.env.example` to `.env`
    - Fill in your Firebase configuration details
 
 4. Start the development server
+
 ```bash
 npm run dev
 ```
